@@ -7,7 +7,6 @@ public class GameMaster : MonoBehaviour
 {
    public void GoToGameScene()
     {
-        Debug.Log("Button pressed!");
         SceneManager.LoadScene("Game");
     }
 
@@ -19,5 +18,10 @@ public class GameMaster : MonoBehaviour
     public void GoToMainMenu()
     {
         SceneManager.LoadScene("Main menu");
+    }
+
+    public void GoToPushEffects()
+    {
+        SceneManager.LoadScene("PushEffects");
     }
 }
