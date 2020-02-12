@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
-   public void GoToGameScene()
+    public GameObject restartPanel;
+    public void GoToGameScene()
     {
         SceneManager.LoadScene("Game");
     }
@@ -23,5 +24,9 @@ public class GameMaster : MonoBehaviour
     public void GoToPushEffects()
     {
         SceneManager.LoadScene("PushEffects");
+    }
+    public void PauseButtonPushed()
+    {
+        restartPanel.SetActive(true);
     }
 }

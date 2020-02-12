@@ -5,8 +5,6 @@ using UnityEngine;
 public class PushEffectsController : MonoBehaviour
 {
 
-    public GameObject restartPanel;
-
     [SerializeField] private Material material;
 
     private float dissolveAmount = 0;
@@ -26,6 +24,10 @@ public class PushEffectsController : MonoBehaviour
         {
             dissolveAmount = Mathf.Clamp01(dissolveAmount + (Time.deltaTime * 0.5f));
             material.SetFloat("_DissolveAmount", dissolveAmount);
+            if (dissolveAmount == 1)
+            {
+                Destroy(this);
+            }
         }
         else
         {
@@ -46,16 +48,12 @@ public class PushEffectsController : MonoBehaviour
                     isDissolving = true;
                 }
             }
-            if (touch.phase == TouchPhase.Ended)
-            {
-                isDissolving = false;
-            }
+            //if (touch.phase == touchphase.ended)
+            //{
+            //    isDissolving = false;
+            //}
 
         }
     }
 
-    public void PauseButtonPushed()
-    {
-        restartPanel.SetActive(true);
-    }
 }
