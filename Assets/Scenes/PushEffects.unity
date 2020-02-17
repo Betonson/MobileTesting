@@ -185,7 +185,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -469,12 +469,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec7f2f5e4267d424986c423bf1140739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circle: {fileID: 7952622002949990197, guid: 3d8504e38cadd764586b02ad001fbfa6, type: 3}
+  circle: {fileID: 253463627828201750, guid: cb9ae9c8c2a909c468344d5c945b8281, type: 3}
   minX: -26.12
   maxX: 26.17
   minY: -12.57
   maxY: 12.57
-  circleCount: 0
+  spawnInterval: 3
 --- !u!4 &1251737227
 Transform:
   m_ObjectHideFlags: 0

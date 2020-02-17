@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PushEffects.unity
     guid: a1e4ea8360ec7c048a514509a82c21b5
+  - enabled: 1
+    path: Assets/Scenes/Jumper.unity
+    guid: 9ec3f824e3191ad40b63ff92ef1f27d4
   m_configObjects: {}
