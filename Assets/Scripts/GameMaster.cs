@@ -8,7 +8,7 @@ public class GameMaster : MonoBehaviour
     public GameObject restartPanel;
     public void GoToGameScene()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("TinyPlanets");
     }
 
     public void Restart()
