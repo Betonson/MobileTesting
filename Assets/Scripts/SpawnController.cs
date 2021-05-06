@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SpawnController : MonoBehaviour
 {
@@ -11,20 +9,15 @@ public class SpawnController : MonoBehaviour
     public float minY;
     public float maxY;
 
-    //public int circleCount = 0;
-
     public float spawnInterval = 5f;
     private float spawnCountdown = 0;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         SpawnRandomCircle();
         spawnCountdown = spawnInterval;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (spawnCountdown <= 0)
